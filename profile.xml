@@ -1,4 +1,4 @@
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,14 +7,69 @@
     tools:context=".MainActivity"
     android:background="#43D3BF">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:textSize="15dp"
-        android:textAlignment="center"
-        android:gravity="center_vertical"
-        android:background="#77E8E5"/>
+        android:layout_height="47dp"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#25BA90"
+            android:gravity="center_vertical"
+            android:textSize="15dp" />
+
+        <view
+            android:layout_width="2dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="9"
+            android:background="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_gravity=""
+        android:background="#FFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profile_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/profile_icon" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="User Name"
+            android:textColor="#C6000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/btn"
+            android:text="        250 +  " />
 
 
+
+
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
