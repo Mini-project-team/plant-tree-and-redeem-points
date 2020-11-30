@@ -11,11 +11,19 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:textSize="15dp"
-        android:textAlignment="center"
+        android:background="#77E8E5"
         android:gravity="center_vertical"
         android:text="PHOTOS"
-        android:background="#77E8E5"/>
+        android:textAlignment="center"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/arrow" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
