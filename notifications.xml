@@ -9,48 +9,70 @@
     android:background="#43D3BF">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/NotificationBar"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:textSize="15dp"
-        android:textAlignment="center"
+        android:background="#77E8E5"
         android:gravity="center_vertical"
         android:text="NOTIFICATIONS"
+        android:textAlignment="center"
         android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
-        android:background="#77E8E5"/>
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="300dp"
         android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
         android:gravity="center"
         android:text="notification"
-
+        app:layout_constraintBottom_toTopOf="@id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="119dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="300dp"
-        android:layout_height="51dp"
-        android:gravity="center"
-        android:text="notification"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="226dp" />
+        app:layout_constraintTop_toBottomOf="@+id/NotificationBar" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="300dp"
         android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="notification"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="300dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
         android:gravity="center"
         android:text="notification"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintTop_toBottomOf="@id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
