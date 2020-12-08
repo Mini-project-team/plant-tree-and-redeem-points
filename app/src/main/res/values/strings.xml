@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Paid</string>
+    <string name="app">Welcome to Paid!!</string>
+    <string name="activity_login">LOGIN</string>
+    <string name="activity_signup">SIGNUP</string>
+    <string name="activity_forgot">Forgot Password?</string>
+    <string name="signup_next">Dont have an account?Signup</string>
+</resources>
